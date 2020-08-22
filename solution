@@ -5,10 +5,10 @@ class Solution:
         res = {}
         
         for file in names :
-            if file in res.keys() :
+            if file in res :
                 n = res[file]
                 tmp = file+'('+ str(n) +')'
-                while tmp in res.keys() :
+                while tmp in res :
                     n += 1
                     tmp = file+'('+ str(n) +')'
                 rec.append(tmp)
